@@ -1,5 +1,6 @@
 # vulnapp
-use docker to attack web as a demo
+
+use docker to show web attack
 
 ## lfi_phpinfo
 

@@ -18,7 +18,7 @@ demo: 源码存放在 code目录下， 利用docker再现
 
 php post方式上传任意文件，服务器都会创建临时文件来保存文件内容。
 
-在HTTP协议中为了方便进行文件传输，规定了一种基于表单的[ HTML文件传输方法 ][3]
+在HTTP协议中为了方便进行文件传输，规定了一种基于表单的[ HTML文件传输方法 ][5]
 
 其中要确保上传表单的属性是 enctype=”multipart/form-data，必须用POST 参见: [ php file-upload.post-method ][5] 
 
@@ -181,7 +181,9 @@ uid=33(www-data) gid=33(www-data) groups=33(www-data)
 * 镜像源
 
 -- [php:5.6-apache 官方源][3]
+
 或
+
 -- [janes/lfi_phpinfo][4]
 
 php:5.6-apache 官方源
@@ -236,3 +238,4 @@ docker-compose up
 [2]: http://www.insomniasec.com/publications/LFI%20With%20PHPInfo%20Assistance.pdf
 [3]: https://hub.docker.com/_/php/
 [4]: https://hub.docker.com/r/janes/lfi_phpinfo/
+[5]: http://www.faqs.org/rfcs/rfc1867.html

